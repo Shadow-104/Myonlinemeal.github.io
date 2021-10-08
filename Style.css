@@ -1,0 +1,251 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* navbar */
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar #logo img{
+    height: 60px;
+    padding: 1px 5px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none; 
+    padding: 23px 25px;  
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* home */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px;
+    height: 450px;
+    color: white;
+}
+
+#home::before{
+    content: "";
+    background: url('/My websites/web_2/img/home1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 528px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    font-size: 2.5rem;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+#home p{
+    font-size: 1.2rem;
+    padding: 5px 2px;
+    text-align: center;
+}
+
+#home button{
+    margin: 25px 2px;
+    padding: 5px 20px;
+    background-color: tomato;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+#home button:hover{
+    background-color: rgb(231, 63, 34);
+}
+
+
+/* service */
+#service{
+    display: flex;
+    justify-content: center;
+}
+
+#service #box{
+    display: flex;
+}
+
+#service .container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 5px 40px;
+    border: 3px solid brown;
+    border-radius: 25px;
+    background-color: rgb(175, 172, 145);
+}
+
+#service .container img{
+    width: 123px;
+    align-self: center;
+}
+
+#service .container h2{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 8px 12px;
+    margin: auto;
+}
+
+#service-2 .container p{
+    text-align: center;
+}
+
+
+/* Client */
+#client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+
+#client::before{
+    content: "";
+    position: absolute;
+    background: url('/My websites/web_2/img/client.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#client .customer{
+    width: 130px;
+    padding: 10px 20px;
+    margin: 10px 60px;
+}
+
+
+/* Contact */
+#contact{
+    display: flex;
+    flex-direction: column;
+    height: 450px; 
+    justify-content: center;
+    align-items: center;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('/My websites/web_2/img/contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#contact .input{
+    width: 500px;
+    padding: 5px 3px;
+    border: none;
+    border-radius: 2px;
+}
+
+#contact label{
+    width: 500px;
+    margin-top: 5px; 
+    font-size: 1.2rem;
+}
+
+#contact button{
+    width: 100px;
+    padding: 5px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: tomato;
+    border-radius: 7px;
+    color: white;
+}
+
+#contact button:hover{
+    background-color: rgb(241, 58, 58);
+    cursor: pointer;
+}
+
+
+/* footer */
+#foot{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 3px;
+}
+
+
+/* utility class */
+.primary{
+    text-align: center;
+    padding: 12px 0px;
+    font-size: 2.5rem;
+    margin: 20px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+hr{
+    color: white;
+    width: 100%;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
